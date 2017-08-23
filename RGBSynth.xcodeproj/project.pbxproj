@@ -14,6 +14,13 @@
 		357A51BC1E951CDF00E6F464 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 357A51BA1E951CDF00E6F464 /* LaunchScreen.storyboard */; };
 		357A51C71E951CDF00E6F464 /* RGBSynthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357A51C61E951CDF00E6F464 /* RGBSynthTests.swift */; };
 		357A51D21E951CDF00E6F464 /* RGBSynthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357A51D11E951CDF00E6F464 /* RGBSynthUITests.swift */; };
+		357A51E91E951ECC00E6F464 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357A51E81E951ECC00E6F464 /* AudioKit.framework */; };
+		357A51EB1E951EE800E6F464 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357A51EA1E951EE800E6F464 /* helpers.swift */; };
+		357A51EC1E951F1900E6F464 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357A51E81E951ECC00E6F464 /* AudioKit.framework */; };
+		357A51ED1E951F1900E6F464 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 357A51E81E951ECC00E6F464 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		357A51EF1E951F3200E6F464 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357A51E51E951D2800E6F464 /* GPUImage.framework */; };
+		357A51F01E951F3200E6F464 /* GPUImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 357A51E51E951D2800E6F464 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		357A51F41E951F4E00E6F464 /* metalgate.wav in Resources */ = {isa = PBXBuildFile; fileRef = 357A51F31E951F4E00E6F464 /* metalgate.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,43 @@
 			remoteGlobalIDString = 357A51AD1E951CDF00E6F464;
 			remoteInfo = RGBSynth;
 		};
+		357A51E41E951D2800E6F464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51DF1E951D2800E6F464 /* GPUImage-iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCD1B1251C66A262001F2BDC;
+			remoteInfo = GPUImage;
+		};
+		357A51E61E951D2800E6F464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51DF1E951D2800E6F464 /* GPUImage-iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCD1B12F1C66A262001F2BDC;
+			remoteInfo = GPUImageTests;
+		};
+		357A51F11E951F3200E6F464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51DF1E951D2800E6F464 /* GPUImage-iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCD1B1241C66A262001F2BDC;
+			remoteInfo = GPUImage;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		357A51EE1E951F1900E6F464 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				357A51ED1E951F1900E6F464 /* AudioKit.framework in Embed Frameworks */,
+				357A51F01E951F3200E6F464 /* GPUImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		357A51AE1E951CDF00E6F464 /* RGBSynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBSynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +90,10 @@
 		357A51CD1E951CDF00E6F464 /* RGBSynthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGBSynthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		357A51D11E951CDF00E6F464 /* RGBSynthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSynthUITests.swift; sourceTree = "<group>"; };
 		357A51D31E951CDF00E6F464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		357A51DF1E951D2800E6F464 /* GPUImage-iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "GPUImage-iOS.xcodeproj"; path = "../../../../Downloads/GPUImage2-master/framework/GPUImage-iOS.xcodeproj"; sourceTree = "<group>"; };
+		357A51E81E951ECC00E6F464 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		357A51EA1E951EE800E6F464 /* helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helpers.swift; sourceTree = "<group>"; };
+		357A51F31E951F4E00E6F464 /* metalgate.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metalgate.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +101,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357A51EC1E951F1900E6F464 /* AudioKit.framework in Frameworks */,
+				357A51E91E951ECC00E6F464 /* AudioKit.framework in Frameworks */,
+				357A51EF1E951F3200E6F464 /* GPUImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +149,14 @@
 			children = (
 				357A51B11E951CDF00E6F464 /* AppDelegate.swift */,
 				357A51B31E951CDF00E6F464 /* ViewController.swift */,
+				357A51F31E951F4E00E6F464 /* metalgate.wav */,
+				357A51EA1E951EE800E6F464 /* helpers.swift */,
 				357A51B51E951CDF00E6F464 /* Main.storyboard */,
 				357A51B81E951CDF00E6F464 /* Assets.xcassets */,
 				357A51BA1E951CDF00E6F464 /* LaunchScreen.storyboard */,
 				357A51BD1E951CDF00E6F464 /* Info.plist */,
+				357A51E81E951ECC00E6F464 /* AudioKit.framework */,
+				357A51DF1E951D2800E6F464 /* GPUImage-iOS.xcodeproj */,
 			);
 			path = RGBSynth;
 			sourceTree = "<group>";
@@ -125,6 +179,15 @@
 			path = RGBSynthUITests;
 			sourceTree = "<group>";
 		};
+		357A51E01E951D2800E6F464 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				357A51E51E951D2800E6F464 /* GPUImage.framework */,
+				357A51E71E951D2800E6F464 /* GPUImageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +198,12 @@
 				357A51AA1E951CDF00E6F464 /* Sources */,
 				357A51AB1E951CDF00E6F464 /* Frameworks */,
 				357A51AC1E951CDF00E6F464 /* Resources */,
+				357A51EE1E951F1900E6F464 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				357A51F21E951F3200E6F464 /* PBXTargetDependency */,
 			);
 			name = RGBSynth;
 			productName = RGBSynth;
@@ -221,6 +286,12 @@
 			mainGroup = 357A51A51E951CDF00E6F464;
 			productRefGroup = 357A51AF1E951CDF00E6F464 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 357A51E01E951D2800E6F464 /* Products */;
+					ProjectRef = 357A51DF1E951D2800E6F464 /* GPUImage-iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				357A51AD1E951CDF00E6F464 /* RGBSynth */,
@@ -230,12 +301,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		357A51E51E951D2800E6F464 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 357A51E41E951D2800E6F464 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357A51E71E951D2800E6F464 /* GPUImageTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests.xctest;
+			remoteRef = 357A51E61E951D2800E6F464 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		357A51AC1E951CDF00E6F464 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				357A51BC1E951CDF00E6F464 /* LaunchScreen.storyboard in Resources */,
+				357A51F41E951F4E00E6F464 /* metalgate.wav in Resources */,
 				357A51B91E951CDF00E6F464 /* Assets.xcassets in Resources */,
 				357A51B71E951CDF00E6F464 /* Main.storyboard in Resources */,
 			);
@@ -264,6 +353,7 @@
 			files = (
 				357A51B41E951CDF00E6F464 /* ViewController.swift in Sources */,
 				357A51B21E951CDF00E6F464 /* AppDelegate.swift in Sources */,
+				357A51EB1E951EE800E6F464 /* helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +385,11 @@
 			isa = PBXTargetDependency;
 			target = 357A51AD1E951CDF00E6F464 /* RGBSynth */;
 			targetProxy = 357A51CE1E951CDF00E6F464 /* PBXContainerItemProxy */;
+		};
+		357A51F21E951F3200E6F464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage;
+			targetProxy = 357A51F11E951F3200E6F464 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -416,11 +511,16 @@
 		357A51D71E951CDF00E6F464 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4DWNK4MCTP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RGBSynth",
+				);
 				INFOPLIST_FILE = RGBSynth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobgen.RGBSynth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobgen.RGBSynth2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -429,11 +529,16 @@
 		357A51D81E951CDF00E6F464 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4DWNK4MCTP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RGBSynth",
+				);
 				INFOPLIST_FILE = RGBSynth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobgen.RGBSynth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobgen.RGBSynth2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -516,6 +621,7 @@
 				357A51D81E951CDF00E6F464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		357A51D91E951CDF00E6F464 /* Build configuration list for PBXNativeTarget "RGBSynthTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +630,7 @@
 				357A51DB1E951CDF00E6F464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		357A51DC1E951CDF00E6F464 /* Build configuration list for PBXNativeTarget "RGBSynthUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +639,7 @@
 				357A51DE1E951CDF00E6F464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
